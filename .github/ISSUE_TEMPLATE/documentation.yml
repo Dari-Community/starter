@@ -1,0 +1,56 @@
+name: Documentation
+description: Report documentation issues or suggest documentation improvements.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        از شما برای کمک به بهبود مستندات ProjectName تشکر می‌کنیم.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: نوع درخواست
+      description: مشخص کنید چه نوع تغییراتی در مستندات نیاز است.
+      options:
+        - اصلاح اشتباه
+        - توضیح بیشتر
+        - مستندات جدید
+        - مثال جدید
+        - سایر
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: محل مستندات
+      description: لینک، نام فایل یا بخش مورد نظر را مشخص کنید.
+      placeholder: README.md, docs/installation.md, ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: توضیح درخواست
+      description: مشکل یا تغییر مورد نظر خود را توضیح دهید.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: پیشنهاد اصلاح
+      description: اگر پیشنهاد مشخصی برای اصلاح دارید، آن را بنویسید.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: معلومات اضافی
+      description: هر معلومات دیگری که به این درخواست کمک کند.
+    validations:
+      required: false
