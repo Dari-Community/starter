@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in ProjectName.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        تشکر از شما برای گزارش این مشکل.
+        لطفاً معلومات زیر را تا حد امکان دقیق تکمیل کنید.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: توضیح مشکل
+      description: مشکل را به صورت واضح توضیح دهید.
+      placeholder: توضیح دهید که چه مشکلی وجود دارد...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: مراحل بازتولید مشکل
+      description: چگونه می‌توان این مشکل را دوباره ایجاد کرد؟
+      placeholder: |
+        1. به ...
+        2. روی ...
+        3. مشاهده ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: رفتار مورد انتظار
+      description: انتظار داشتید چه اتفاقی رخ دهد؟
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: رفتار فعلی
+      description: در حال حاضر چه اتفاقی رخ می‌دهد؟
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: معلومات محیط
+      description: نسخه، سیستم‌عامل، مرورگر یا سایر معلومات مرتبط.
+      placeholder: |
+        Version:
+        OS:
+        Browser:
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: تصاویر یا فایل‌های مرتبط
+      description: در صورت نیاز تصاویر، ویدیو یا فایل‌های مرتبط را اضافه کنید.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: معلومات اضافی
+      description: هر معلومات دیگری که به بررسی این مشکل کمک کند.
+    validations:
+      required: false
