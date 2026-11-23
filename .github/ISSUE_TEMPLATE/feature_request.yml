@@ -1,0 +1,43 @@
+name: Feature Request
+description: Suggest a new feature or improvement for ProjectName.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        تشکر از شما برای پیشنهاد یک قابلیت جدید.
+        پیشنهاد خود را با جزئیات توضیح دهید.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: مشکل یا نیاز
+      description: این قابلیت چه مشکل یا نیازی را برطرف می‌کند؟
+      placeholder: مشکل یا نیاز خود را توضیح دهید...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: راه‌حل پیشنهادی
+      description: قابلیت پیشنهادی شما چگونه باید کار کند؟
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: راه‌حل‌های دیگر
+      description: آیا راه‌حل یا گزینه دیگری در نظر گرفته‌اید؟
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: معلومات اضافی
+      description: تصاویر، مثال‌ها یا معلومات دیگری که به پیشنهاد شما کمک کند.
+    validations:
+      required: false
