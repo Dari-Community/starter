@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        از شما برای کمک به بهبود مستندات ProjectName تشکر می‌کنیم.
+        از شما برای کمک به بهبود مستندات اسم‌پروژه تشکر می‌کنیم.
 
   - type: dropdown
     id: type
